@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5% 10% 10% 10%;
+}
+.contaianer-main {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+/* Nomor-3 */
+.grid-container-1 {
+    display: grid;
+    width: 550px;
+    grid-template-columns: 100px 150px 150px 100px;
+    grid-template-rows: 50px 100px;
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.grid-container-1 .item {
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* Nomor-4 */
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 150px 100px 150px;
+    gap: 15px;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+.grid-container-2 .item {
+    background-color: #2ecc71;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Nomor-5 */
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    gap: 10px;
+    background-color: #ecf0f1;
+    padding: 10px;
+    text-align: right;
+}
+
+.grid-container-3 .header {
+    grid-area: header;
+    background-color: lightcoral;
+}
+
+.grid-container-3 .sidebar {
+    grid-area: sidebar;
+    background-color: lightsalmon;
+}
+
+.grid-container-3 .main {
+    grid-area: main;
+    background-color: lightpink;
+}
+
+.grid-container-3 .footer {
+    grid-area: footer;
+    background-color: lightskyblue;
+}
+
+.grid-container-3 .grid-item {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
